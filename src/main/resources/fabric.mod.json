@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "allstacksto67",
+  "version": "${version}",
+  "name": "AllStacksTo67",
+  "description": "Changes the maximum stack size of all stackable items from 64 to 67. Items that are normally unstackable (like tools, weapons, armor) remain unchanged. Works in singleplayer and on servers.",
+  "authors": [
+    "Maxi"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/allstacksto67/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "de.maxi.allstacksto67.client.Allstacksto67Client"
+    ],
+    "main": [
+      "de.maxi.allstacksto67.Allstacksto67"
+    ]
+  },
+  "mixins": [
+    "allstacksto67.mixins.json",
+    {
+      "config": "allstacksto67.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
