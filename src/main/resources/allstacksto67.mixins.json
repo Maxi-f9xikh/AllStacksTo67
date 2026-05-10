@@ -4,6 +4,7 @@
   "package": "de.maxi.allstacksto67.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "ItemMixin",
     "ItemStackMixin"
   ],
   "injectors": {
